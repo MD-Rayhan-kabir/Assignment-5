@@ -69,8 +69,8 @@ const handleClickOne = (e) => {
 
 
 function blog() {
-    location.replace('/blog.html')
+    location.replace('./blog.html')
   }
   function home() {
-    location.replace('/index.html')
+    location.replace('./index.html')
   }
