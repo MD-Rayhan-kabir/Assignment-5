@@ -62,10 +62,13 @@ const handleDonation = (inputVal, val, title) => {
 //  first 
 const handleClickOne = (e) => {
     let inputAmount1 = getElementUsingId("input_ammount_1");
-    let title1 = getElementUsingId("title_1");
     const inputField1 = parseInt(getElementUsingId("inputfiled_1").value);
-    handleDonation(inputField1, inputAmount1, title1);
+    handleDonation(inputField1, inputAmount1);
 };
 
-
+const handleClickTwo = (e) => {
+    let inputAmount2 = getElementUsingId("input_ammount_2");
+    const inputField2 = parseInt(getElementUsingId("inputfiled_2").value);
+    handleDonation(inputField2, inputAmount2);
+}
 
