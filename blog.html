@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation website</title>
+    <link rel="icon" type="image/png" href="/assets/coin.png">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        
+        <nav class="bg-nav_bg flex justify-around items-center capitalize py-5 ">
+          <div class="cursor-pointer ">
+            <button onclick="home()" class="btn bg-lime-400">Home</button>
+          </div>
+          <div class="flex justify-center items-center gap-2 cursor-pointer capitalize">
+              <img src="/assets/logo.png" alt="" class="w-[30px] h-[30px] ">
+              <span class="capitalize ">Donate bangladesh</span>
+          
+          </div>
+          <div class="flex justify-center items-center gap-1 cursor-pointer ">
+              <img src="/assets/coin.png" alt="" >
+              <span id="mainAmount">5000</span>
+              <span>BDT</span>
+          </div>
+      </nav>
+    </header>
+    <main>
+      <div class="flex  flex-col justify-start items-start  w-[95%] md:w-[80%] m-auto ">
+        <div class="w-[100%] m-auto h-max flex  flex-col justify-start items-start gap-5 ">
+            <h1 class="text-left text-4xl py-5 ">
+                Important Faq
+                <i class="fa-regular fa-circle-question text-5xl"></i>
+            </h1>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p>To select an element from the DOM in JavaScript, here are the key methods you can use:
+
+                  getElementById,getElementsByClassName,getElementsByTagName,querySelectorquerySelectorAll</p>
+              </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM?</div>
+              <div class="collapse-content">
+                <p>Event delegation is a technique where a single event listener is attached to a parent element to handle events from its child elements. This is efficient because it utilizes event bubbling, allowing the parent to capture events from dynamically added or existing children.</p>
+              </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes or styles using the DOM?</div>
+              <div class="collapse-content">
+                <p>To manipulate an element's attributes in the DOM, you can use methods like `setAttribute()`, `getAttribute()`, or directly modify properties like `id`, `className`, etc. For styles, you can change the `style` property directly, such as `element.style.color = "red"` or `element.style.backgroundColor = "blue"`.</p>
+              </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+              <div class="collapse-title text-xl font-medium">What is the purpose of the DOMContentLoaded event?</div>
+              <div class="collapse-content">
+                <p>The `DOMContentLoaded` event triggers when the HTML is fully loaded and parsed, allowing scripts to run before external resources like images are loaded. It's used to initialize the DOM early.</p>
+              </div>
+            </div>
+            
+        </div>
+        </div>
+    </main>
+    <script src="/index.js"></script>
+</body>
+</html>
