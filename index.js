@@ -71,4 +71,6 @@ const handleClickOne = (e) => {
 function blog() {
     location.replace('./blog.html')
   }
-
+//   function home() {
+//     location.replace('./index.html')
+//   }
